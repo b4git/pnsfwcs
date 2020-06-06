@@ -1,0 +1,3 @@
+# Copying the directories doesn't seem to copy symlinks.
+# Hence, manually create symlinks in public\tsrc and private tsrc directories:
+	mklink /d .\Common ..\..\common\tsrc

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "*": [
+        "types/*"
+      ]
+    },
+    "incremental": true,
+    "strict": true,
+    "baseUrl": "./",
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./private/js/",
+    "rootDir": "./private/tsrc/",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom",
+      "es6"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "./types",
+    "./public/",
+    "./common/"
+  ],
+}

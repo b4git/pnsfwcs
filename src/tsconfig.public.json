@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "*": [
+        "./types/*"
+      ],      
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "baseUrl": "./",
+    "target": "es6",
+    "module": "esnext",
+    "outDir": "./public/js/",
+    "rootDir": "./public/tsrc/", /* actually ./public/tsrc/ but it says root needs to include all source files */
+    "sourceMap": true,
+    //"moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom",
+      "es6"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "./types",
+    "./private/",
+    "./common/"
+  ],
+}

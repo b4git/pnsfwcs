@@ -1,0 +1,29 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cco": "tsc -p tsconfig.public.json",
+    "cso": "tsc -p tsconfig.private.json",
+    "ccw": "tsc -w -p tsconfig.public.json",
+    "csw": "tsc -w -p tsconfig.private.json",
+    "cw_comment": "watch changes in new windows",
+    "cw": "start  tsc -w -p tsconfig.public.json & start  tsc -w -p tsconfig.private.json",
+    "r": "node ./private/js/index.js",
+    "crw": "npm run cw & nodemon --watch ./private/js ./private/js/index.js",
+    "rw_comment": "runs and watches for changes in server's js dir (used when compiler is running separately)",
+    "rw": "nodemon --watch ./private/js ./private/js/index.js",
+    "start": "start http://localhost:8888 & npm run crw",
+    "comment_ca": "compile all only (no run or watch)",
+    "ca": "npm run cso && npm run cco"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "*": [
+                "types/*"
+            ]
+        },
+        "strict": true,
+        "baseUrl": "./",
+        "target": "esnext",
+        "module": "esnext",
+        "outDir": "./dist/deletable/", // /* never used! */        //"outFile": "alljs.js",
+        "rootDir": "./",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "lib": [
+            "esnext",
+            "es2018",
+            "dom",
+        ]
+    },
+    /* this configuration should exclude all! */
+    "exclude": [
+        "node_modules",
+        //"./private",
+        //"./public", /* comment this line if highstock module not found!*/
+        "./common"
+    ],
+}
