@@ -1,2 +1,2 @@
 # pnsfwcs
-purse node js serve with client server
+purse node js server with client server
